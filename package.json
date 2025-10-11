@@ -1,9 +1,17 @@
 {
+  "type": "module",
   "name": "node-cache-2",
   "version": "1.0.0",
   "description": "Simple in-memory caching library written in ecma script.",
   "main": "index.js",
   "repository": "https://github.com/puni9869/node-cache-2.git",
   "author": "puni9869 <punitinani1@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint "
+  },
+  "devDependencies": {
+    "eslint": ">=9.33.0",
+    "eslint-config-xo": "^0.49.0"
+  }
 }

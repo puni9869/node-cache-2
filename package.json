@@ -1,0 +1,9 @@
+{
+  "name": "node-cache-2",
+  "version": "1.0.0",
+  "description": "Simple in-memory caching library written in ecma script.",
+  "main": "index.js",
+  "repository": "https://github.com/puni9869/node-cache-2.git",
+  "author": "puni9869 <punitinani1@hotmail.com>",
+  "license": "MIT"
+}

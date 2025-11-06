@@ -30,7 +30,7 @@ export class NodeCache2 extends EventEmitter {
 
 		this.data = {};
 
-		this.options = Object.assign({
+		this.options = {
 			forceString: false,
 			objectValueSize: 80,
 			promiseValueSize: 80,
@@ -40,17 +40,18 @@ export class NodeCache2 extends EventEmitter {
 			useClones: true,
 			deleteOnExpire: true,
 			enableLegacyCallbacks: false,
-			maxKeys: -1
-		}, this.options);
+			maxKeys: -1,
+			...this.options,
+		};
 
 		this.stats = {
 			hits: 0,
 			misses: 0,
 			keys: 0,
 			ksize: 0,
-			vsize: 0
+			vsize: 0,
 		};
-		this.validKeyTypes = ["string", "number"];
+		this.validKeyTypes = ['string', 'number'];
 		// this._checkData();
 	}
 

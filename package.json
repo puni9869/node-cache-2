@@ -8,10 +8,14 @@
   "author": "puni9869 <punitinani1@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint "
+    "lint": "eslint",
+    "test": "node --test"
   },
   "devDependencies": {
     "eslint": ">=9.33.0",
     "eslint-config-xo": "^0.49.0"
+  },
+  "dependencies": {
+    "node-cache": "^5.1.2"
   }
 }

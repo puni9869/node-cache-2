@@ -116,7 +116,7 @@ test('enforces maxKeys for new entries', t => {
 
 	assert.throws(() => {
 		cache.set('bar', 'baz');
-	}, /maxKeys/);
+	}, /maxKeys/v);
 
 	assert.strictEqual(cache.set('foo', 'baz'), true);
 	assert.strictEqual(cache.get('foo'), 'baz');

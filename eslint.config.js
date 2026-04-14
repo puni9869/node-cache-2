@@ -1,6 +1,13 @@
-import config from 'eslint-config-xo';
-import {defineConfig} from 'eslint/config';
+import eslintConfigXo from 'eslint-config-xo';
 
-export default defineConfig([
-	config,
-]);
+const config = [
+	...eslintConfigXo(),
+	{
+		files: ['src/index.js'],
+		rules: {
+			'unicorn/prefer-event-target': 'off',
+		},
+	},
+];
+
+export default config;

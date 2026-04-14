@@ -1,4 +1,5 @@
 import {EventEmitter} from 'node:events';
+import {Buffer} from 'node:buffer';
 
 const DEFAULT_OPTIONS = {
 	stdTTL: 0,

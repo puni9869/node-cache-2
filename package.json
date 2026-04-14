@@ -1,21 +1,43 @@
 {
-  "type": "module",
-  "name": "node-cache-2",
-  "version": "1.0.0",
-  "description": "Simple in-memory caching library written in ecma script.",
-  "main": "index.js",
-  "repository": "https://github.com/puni9869/node-cache-2.git",
-  "author": "puni9869 <punitinani1@hotmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint",
-    "test": "node --test"
-  },
-  "devDependencies": {
-    "eslint": ">=9.33.0",
-    "eslint-config-xo": "^0.49.0"
-  },
-  "dependencies": {
-    "node-cache": "^5.1.2"
-  }
+	"type": "module",
+	"name": "@puni9869/node-cache-2",
+	"version": "1.0.0",
+	"description": "A node-cache style in-memory cache implemented as a native ECMAScript module.",
+	"main": "./src/index.js",
+	"exports": {
+		".": "./src/index.js"
+	},
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"sideEffects": false,
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "yarn@1.22.22",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"repository": "https://github.com/puni9869/node-cache-2.git",
+	"author": "puni9869",
+	"license": "MIT",
+	"keywords": [
+		"cache",
+		"in-memory",
+		"ttl",
+		"node-cache",
+		"esm"
+	],
+	"scripts": {
+		"lint": "eslint .",
+		"test": "node --test",
+		"check": "yarn lint && yarn test",
+		"release": "npm publish"
+	},
+	"devDependencies": {
+		"eslint": ">=9.33.0",
+		"eslint-config-xo": "^0.49.0"
+	}
 }
